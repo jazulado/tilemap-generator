@@ -8,6 +8,7 @@ def rotate_image(image, angle):
   result = cv2.warpAffine(image, rot_mat, image.shape[1::-1], flags=cv2.INTER_LINEAR)
   return result
 
+division = int(input("type the width and height of the small square in px: "))
 ortogonal = cv2.imread(".\example-asset.png", 4)
 h,w = ortogonal.shape[:2]
 print ('image height and width = ' +str(h) + " x " + str(w)) # 318 * 348 pixels
