@@ -12,7 +12,7 @@ division = int(input("type the width and height of the small square in px: "))
 ortogonal = cv2.imread(".\example-asset.png", 4)
 h,w = ortogonal.shape[:2]
 print ('image height and width = ' +str(h) + " x " + str(w)) # 318 * 348 pixels
-divition_size = 16
+divition_size = division
 
 numcol = int(w / divition_size)
 numrow = int(h / divition_size)
